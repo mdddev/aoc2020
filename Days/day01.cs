@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
 
 namespace AdventOfCode2020.Days
 {
     public class Day1
     {
+        public Day1(IEnumerable<int> numbers) => _numbers = numbers.ToArray();
         private readonly int _target = 2020;
-        private readonly int[] _numbers = Inputs.Day1;
+        private readonly int[] _numbers;
 
         public int Part1()
         {
