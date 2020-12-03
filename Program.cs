@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using AdventOfCode2020.Days;
 
 namespace AdventOfCode2020
 {

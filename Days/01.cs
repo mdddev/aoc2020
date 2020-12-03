@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AdventOfCode2020
+namespace AdventOfCode2020.Days
 {
     public class Day1
     {
