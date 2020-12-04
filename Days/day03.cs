@@ -38,7 +38,9 @@ namespace AdventOfCode2020.Days
             };
             foreach (var slope in slopes)
             {
-                treesPerSlopeList.Add(_treesHitFallingDown(lines, slope));
+                var trees = _treesHitFallingDown(lines, slope);
+                System.Console.WriteLine(trees);
+                treesPerSlopeList.Add(trees);
             }
             long productOfTreesHit = treesPerSlopeList.Aggregate((long)1, (x,y) => x * y);
             System.Console.WriteLine($"Result of day3-2= product of trees hit per slope is {productOfTreesHit}");
@@ -47,7 +49,7 @@ namespace AdventOfCode2020.Days
         private static int _treesHitFallingDown(List<string> lines, (int right, int down) slope)
         {
             var treesEncountered = 0;
-            for (int i = 1; i < lines.Count; i+=slope.down)
+            for (int i = slope.down; i < lines.Count; i+=slope.down)
             {
                 var y = i;
                 var x = i * slope.right;
