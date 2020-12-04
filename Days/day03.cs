@@ -39,7 +39,6 @@ namespace AdventOfCode2020.Days
             foreach (var slope in slopes)
             {
                 var trees = _treesHitFallingDown(lines, slope);
-                System.Console.WriteLine(trees);
                 treesPerSlopeList.Add(trees);
             }
             long productOfTreesHit = treesPerSlopeList.Aggregate((long)1, (x,y) => x * y);
