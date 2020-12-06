@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AdventOfCode2020.Days;
 using System.Linq;
+using System.Drawing;
 
 namespace AdventOfCode2020
 {
