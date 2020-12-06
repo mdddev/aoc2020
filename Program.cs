@@ -14,7 +14,9 @@ namespace AdventOfCode2020
         {
             // await _solveDay1();
             // await _solveDay2();
-            await Day3.OpenSesame();
+            // await Day3.OpenSesame();
+            await Day4.OpenSesame();
+
         }
 
         static private async Task _solveDay1()
@@ -39,7 +41,5 @@ namespace AdventOfCode2020
             System.Console.WriteLine($"Result of day2-2= {validAtNewWorkplace} passwords are valid according to new workplace's rules");
 
         }
-
-        // static private async Task _solveDay3() {}
     }
 }
