@@ -13,11 +13,7 @@ namespace AdventOfCode2020
     {
         static async Task Main(string[] args)
         {
-            // await _solveDay1();
-            // await _solveDay2();
-            // await Day3.OpenSesame();
-            await Day4.OpenSesame();
-
+            await Day5.OpenSesame();
         }
 
         static private async Task _solveDay1()
